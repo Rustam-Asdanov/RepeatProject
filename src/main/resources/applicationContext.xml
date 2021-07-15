@@ -7,9 +7,13 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-        <bean id="theGame"
-                class="com.lesson.inversion_of_control.SportGame">
+        <bean id="myClub"
+                class="com.lesson.dependency_injection.PSG">
+        </bean>
 
+        <bean id="myTransfer"
+                class="com.lesson.dependency_injection.TransferMarket">
+                <constructor-arg ref="myClub" />
         </bean>
 
 </beans>

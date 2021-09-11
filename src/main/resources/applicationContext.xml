@@ -7,18 +7,15 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-        <bean   id="myCar"
-                class="com.lesson.multyDependency.CarCompany"> <!-- new CarCompany() -->
-                <property name="TheCar" ref="someCar"/> <!-- new CarCompany().setTheCar(new Germany(new Engine()))-->
-        </bean>
+        <context:component-scan base-package="com.lesson.annotation"/>
 
-        <bean   id="someCar"
-                class="com.lesson.multyDependency.SomeCars.Germany">    <!-- new Germany(...) -->
-                <constructor-arg ref="service" /> <!-- new Germany(new Engine()) -->
-        </bean>
+<!--        <bean id="store" class="com.lesson.annotation.EpicGames">-->
+<!--&lt;!&ndash;                <constructor-arg ref="sport"/>&ndash;&gt;-->
+<!--                <property name="games" ref="sport"/>-->
+<!--        </bean>-->
 
-        <bean id="service"
-                class="com.lesson.multyDependency.CarService.Engine"> <!-- new Engine() -->
+<!--        <bean id="sport" class="com.lesson.annotation.SportGame">-->
 
-        </bean>
+<!--        </bean>-->
+
 </beans>

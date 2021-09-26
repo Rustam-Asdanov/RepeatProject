@@ -7,17 +7,4 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-        <context:component-scan base-package="com.lesson.homeworkSeven"/>
-
-        <context:property-placeholder location="classpath:application.properties" />
-
-<!--        <bean id="store" class="com.lesson.annotation.EpicGames">-->
-<!--&lt;!&ndash;                <constructor-arg ref="sport"/>&ndash;&gt;-->
-<!--                <property name="games" ref="sport"/>-->
-<!--        </bean>-->
-
-<!--        <bean id="sport" class="com.lesson.annotation.SportGame">-->
-
-<!--        </bean>-->
-
 </beans>

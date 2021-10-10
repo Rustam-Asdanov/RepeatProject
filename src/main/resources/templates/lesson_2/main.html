@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/page/add" method="GET">
+        <label for="first-name">Input your name:</label>
+        <input type="text" name="firstName" id="first-name" placeholder="input here...">
+
+        <br>
+
+        <label for="last-name">Input your last name</label>
+        <input type="text" name="lastName" id="last-name" placeholder="...">
+
+        <br>
+
+
+        Выберите ваш пол
+        <label for="human-1">Man</label>
+        <input type="radio" name="gender" id="human-1" value="man">
+
+        <label for="human-2">Woman</label>
+        <input type="radio" name="gender" id="human-2" value="woman">
+
+        <br>
+
+        <labeL for="en">English</labeL>
+        <input type="checkbox" name="language" id="en" value="English">
+
+        <labeL for="gr">German</labeL>
+        <input type="checkbox" name="language" id="gr" value="German">
+
+        <labeL for="fr">French</labeL>
+        <input type="checkbox" name="language" id="fr" value="French">
+
+        <br>
+
+        <label for="city">Choose city</label>
+        <select name="city" id="city">
+            <option value="Baku">Baku</option>
+            <option value="Istanbul" selected>Istanbul</option>
+            <option value="Islamabad">Islamabad</option>
+        </select><br>
+
+
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
